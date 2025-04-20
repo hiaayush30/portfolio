@@ -6,7 +6,7 @@ function TechStack() {
     return (
         <section className="max-w-2xl mx-auto text-center py-24">
             <h2 id='techStack' className="text-3xl font-semibold py-5">My Tech Stack</h2>
-            <p className="text-xl text-slate-500 font-semibold text-center mb-8 flex flex-wrap">Skills which I am pretty confident in</p>
+            <p className="text-xl text-slate-500 font-semibold text-center mb-8">Skills which I am pretty confident in</p>
             <div className="flex flex-wrap gap-15 justify-center py-3 items-center">
             <div className='bg-white rounded-full p-2 relative group cursor-pointer hover:shadow-lg shadow-cyan-400 hover:scale-105'>
                     <Image alt="next.js" src="/next-js.svg" height={100} width={100} className="flex-none" />
