@@ -2,8 +2,8 @@ export const projects = [
     {
         title:"Socially",
         description:"A modern social media website built using Nextjs with next-auth and a responsive UI.",
-        codeLink:"https://socially-u1vm.onrender.com",
-        liveLink:"https://github.com/hiaayush30/swiftbuy"
+        codeLink:"https://github.com/hiaayush30/socially",
+        liveLink:"https://socially-u1vm.onrender.com"
     },
     {
         title:"Chatify",
