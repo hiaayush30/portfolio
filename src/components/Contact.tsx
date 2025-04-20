@@ -6,7 +6,7 @@ function Contact() {
         <section id='contact' className="text-center py-24">
             <h2 className="text-3xl font-semibold">Get in Touch</h2>
             <p className="text-slate-400">Let&apos;s connect and build something amazing!</p>
-            <div className="flex justify-center gap-6 text-xl my-10">
+            <div className="flex flex-wrap items-center justify-center gap-6 text-xl my-10">
                 <a
                     href="mailto:hiaayush30@gmail.com"
                     className="hover:text-cyan-400 p-3 flex items-center gap-2 border-2 hover:border-cyan-400">
