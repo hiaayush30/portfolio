@@ -6,6 +6,7 @@ function Projects() {
     return (
         <section id='projects' className="max-w-4xl mx-auto py-24">
             <h2 className="text-3xl font-semibold text-center mb-8">Projects</h2>
+            <p className="text-xl text-slate-500 font-semibold text-center mb-8">Coded by me from scratch to deployment</p>
             <div className="grid md:grid-cols-2 gap-8">
                 {
                     projects.length > 0 && (

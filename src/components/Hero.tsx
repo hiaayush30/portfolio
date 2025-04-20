@@ -1,3 +1,4 @@
+import { MapPin } from 'lucide-react'
 import React from 'react'
 
 function Hero() {
@@ -9,6 +10,10 @@ function Hero() {
             </div>
             <p className="text-xl md:text-2xl text-slate-400">
                 MERN Stack & Next.js Developer
+            </p>
+            <p className="text-xl md:text-xl text-slate-200 py-5 flex items-center gap-3 justify-center">
+                <MapPin/>
+                <span>Pune, India</span>
             </p>
         </section>
     )
