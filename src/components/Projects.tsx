@@ -4,7 +4,7 @@ import React from 'react'
 
 function Projects() {
     return (
-        <section className="max-w-4xl mx-auto py-24">
+        <section id='projects' className="max-w-4xl mx-auto py-24">
             <h2 className="text-3xl font-semibold text-center mb-8">Projects</h2>
             <div className="grid md:grid-cols-2 gap-8">
                 {

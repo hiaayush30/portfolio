@@ -2,7 +2,7 @@ import React from 'react'
 
 function Contact() {
     return (
-        <section className="text-center py-24">
+        <section id='contact' className="text-center py-24">
             <h2 className="text-3xl font-semibold">Get in Touch</h2>
             <p className="text-slate-400">Let&apos;s connect and build something amazing!</p>
             <div className="flex justify-center gap-6 text-xl">
