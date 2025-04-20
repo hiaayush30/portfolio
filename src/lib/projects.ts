@@ -7,7 +7,7 @@ export const projects = [
     },
     {
         title:"Chatify",
-        description:"A sleek chat app built with postgreSQL and websockets",
+        description:"A sleek chat app built with postgreSQL and websockets along with React on the frontend.",
         codeLink:"https://github.com/hiaayush30/PERN-Chat-App",
         liveLink:"https://pern-chat-railway-production.up.railway.app/"
     },
