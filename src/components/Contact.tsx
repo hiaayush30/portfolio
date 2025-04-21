@@ -9,19 +9,19 @@ function Contact() {
             <div className="flex flex-wrap items-center justify-center gap-6 text-xl my-10">
                 <a
                     href="mailto:hiaayush30@gmail.com"
-                    className="hover:text-cyan-400 p-3 flex items-center gap-2 border-2 hover:border-cyan-400">
+                    className="hover:text-blue-500 p-3 flex items-center gap-2 border-2 hover:border-blue-500">
                     <Mail />
                     <span>Email</span>
                 </a>
                 <a
                     href="https://github.com/hiaayush30"
-                    className="hover:text-cyan-400 p-3 flex items-center gap-2 border-2 hover:border-cyan-400">
+                    className="hover:text-blue-500 p-3 flex items-center gap-2 border-2 hover:border-blue-500">
                     <GithubIcon />
                     <span>Github</span>
                 </a>
                 <a
                     href="https://linkedin.com/in/hiaayush30"
-                    className="hover:text-cyan-400 p-3 flex items-center gap-2 border-2 hover:border-cyan-400">
+                    className="hover:text-blue-500 p-3 flex items-center gap-2 border-2 hover:border-blue-500">
                     <Linkedin />
                     <span>LinkedIn</span>
                 </a>
