@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Kode_Mono } from "next/font/google";
 import "./globals.css";
+import CustomCursor from "@/components/CustomCursor";
 
 const kodeMono = Kode_Mono({
   subsets: ["latin"],
@@ -25,6 +26,7 @@ export default function RootLayout({
         <div className="relative h-full w-full bg-slate-950">
           {children}
           {/* <div className="absolute inset-0 -z-10 h-full w-full items-center px-5 py-24 [background:radial-gradient(125%_125%_at_50%_10%,#000_40%,#63e_100%)]"></div> */}
+          <CustomCursor/>
         </div>
       </body>
     </html>
