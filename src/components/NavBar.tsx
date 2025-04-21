@@ -3,7 +3,7 @@ import React from 'react'
 
 function NavBar() {
   return (
-    <nav className='hidden md:flex fixed right-5 top-1/2 -translate-y-1/2 flex-col space-y-10'>
+    <nav className='lg:text-lg xl:text-xl hidden md:flex fixed right-5 top-1/2 -translate-y-1/2 flex-col space-y-10'>
       <button onClick={() => {
         document.querySelector('#about')?.scrollIntoView({ behavior: "smooth" })
       }}

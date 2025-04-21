@@ -9,7 +9,7 @@ import React from 'react'
 export default function Page() {
   return (
     <div className='flex justify-center'>
-      <main className="md:w-[70%] sm:w-[90%] min-h-screen bg-slate-950 text-white px-6 py-12 space-y-24">
+      <main className="md:w-[70%] sm:w-[90%] min-h-screen  text-white px-6 py-12 space-y-24">
         <Hero />
         <About />
         <TechStack/>
