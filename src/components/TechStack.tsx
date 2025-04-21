@@ -4,7 +4,7 @@ import Tooltip from './Tooltip'
 
 function TechStack() {
     return (
-        <section className="max-w-2xl mx-auto text-center py-24">
+        <section className="max-w-2xl mx-auto text-center py-24 min-h-screen">
             <h2 id='techStack' className="text-3xl font-semibold py-5">My Tech Stack</h2>
             <p className="text-xl text-slate-500 font-semibold text-center mb-8">Skills which I am pretty confident in</p>
             <div className="px-5 flex flex-wrap gap-5 md:gap-15 justify-center py-3 items-center">
