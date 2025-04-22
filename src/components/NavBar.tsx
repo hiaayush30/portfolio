@@ -1,9 +1,24 @@
 "use client"
+import { motion } from "motion/react"
 import React from 'react'
 
 function NavBar() {
   return (
-    <nav className='lg:text-lg xl:text-xl hidden md:flex fixed right-5 top-1/2 -translate-y-1/2 flex-col space-y-10'>
+    <motion.nav
+      initial={{
+        opacity: 0,
+        right:-20
+      }}
+      animate={{
+        opacity:100,
+        right:10
+      }}
+      transition={{
+        delay:2.7,
+        ease:'easeInOut',
+        duration:1
+      }}
+      className='lg:text-lg xl:text-xl hidden md:flex fixed right-5 top-1/2 -translate-y-1/2 flex-col space-y-10'>
       <button onClick={() => {
         document.querySelector('#about')?.scrollIntoView({ behavior: "smooth" })
       }}
@@ -24,7 +39,7 @@ function NavBar() {
         document.querySelector('#contact')?.scrollIntoView({ behavior: "smooth" })
       }}
         className='cursor-pointer hover:scale-105 hover:text-cyan-400 transition-all'>Contact</button>
-    </nav>
+    </motion.nav>
   )
 }
 

@@ -16,6 +16,7 @@ function Hero() {
 
             await controls.start({
                 scale: 1,
+                y:0,
                 transition: { duration: 0.5, ease: 'easeOut' }
             });
         };
@@ -43,7 +44,7 @@ function Hero() {
                     </motion.h1>
                 </div>
                 <motion.span
-                    initial={{ rotate: 0, scale: 3 }}
+                    initial={{ rotate: 0, scale: 3, y:-50 }}
                     animate={controls}
                     className="text-4xl pb-5 inline-block"
                 >
