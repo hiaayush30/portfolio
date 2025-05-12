@@ -1,7 +1,6 @@
 "use client"
 import { motion } from "framer-motion"
 import React, { useState } from 'react'
-import { text } from "stream/consumers";
 
 
 const links = [
@@ -51,36 +50,36 @@ const itemVariants = {
 };
 
 function NavBar() {
-  const [hovered, setHovered] = useState<number | null>(null);
+  const [hovered, setHovered] = useState<number>(0);
   return (
     <motion.nav
       variants={containerVariants}
       initial="hidden"
       animate="visible"
-      className='lg:text-lg xl:text-xl hidden md:flex fixed right-5 top-1/2 -translate-y-1/2 flex-col'
+      className='lg:text-lg xl:text-xl hidden md:flex fixed right-5 top-1/2 -translate-y-1/2 flex-col rounded-xl p-2'
     >
       {links.map((item, idx) => (
         <motion.button // Wrap the button with motion.button
+          onMouseEnter={() => setHovered(idx)}
+          onMouseLeave={() => setHovered(0)}
           key={idx}
           variants={itemVariants} // Apply the item variants
-          onMouseEnter={() => setHovered(idx)}
-          onMouseLeave={() => setHovered(null)}
           className="relative group py-4"
           onClick={() => {
             document.querySelector(item.href)?.scrollIntoView({ behavior: "smooth" })
           }}
         >
           <span
-            className='px-2 cursor-pointer relative group-hover:text-white z-10 mx-auto'
+            className='relative p-2 cursor-pointer group-hover:text-white z-10 mx-auto'
           >
             {item.text}
+            {hovered == idx && (
+              <motion.span
+                layoutId="hover"
+                className="absolute bg-cyan-300/70 inset-0 rounded-full"
+              ></motion.span>
+            )}
           </span>
-          {hovered == idx && (
-            <motion.span
-              layoutId="hover"
-              className="absolute bg-cyan-600 inset-0 rounded-full"
-            ></motion.span>
-          )}
         </motion.button>
       ))}
     </motion.nav>
