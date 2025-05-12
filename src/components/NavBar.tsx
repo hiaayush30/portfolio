@@ -70,13 +70,13 @@ function NavBar() {
           }}
         >
           <span
-            className='relative p-2 cursor-pointer group-hover:text-white z-10 mx-auto'
+            className='relative p-2 cursor-pointer group-hover:text-white mx-auto'
           >
-            {item.text}
+            <span className="relative z-10">{item.text}</span>
             {hovered == idx && (
               <motion.span
                 layoutId="hover"
-                className="absolute bg-cyan-300/70 inset-0 rounded-full"
+                className="absolute bg-cyan-500 inset-0 rounded-full"
               ></motion.span>
             )}
           </span>
