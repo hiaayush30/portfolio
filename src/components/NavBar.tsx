@@ -39,7 +39,7 @@ const containerVariants = {
       delay: 2.7,
       ease: 'easeInOut',
       duration: 1,
-      staggerChildren: 0.5, // Stagger the children's animation
+      // staggerChildren: 0.5, // Stagger the children's animation
     }
   }
 };
